@@ -1,0 +1,18 @@
+body {
+	margin: 0;
+	padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  font-size: 72pt;
+  background: rgb(0,50,100);
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  color: white;
+}

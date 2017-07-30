@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+  	1
+
+    <script>
+
+    	var audioCtx = new AudioContext();
+    	var oscillator = audioCtx.createOscillator();
+    	var gainNode = audioCtx.createGain();
+
+    	oscillator.connect(gainNode);
+			gainNode.connect(audioCtx.destination);
+
+			oscillator.type = 'sine'; // sine wave — other values are 'square', 'sawtooth', 'triangle' and 'custom'
+			oscillator.frequency.value =10; // value in hertz
+			$('freq').innerHTML = freq
+			oscillator.start();	
+
+    </script>
+
+
+  </body>
+  <script>window.location='2'</script>
+</html>

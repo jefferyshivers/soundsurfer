@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+  	<a href='/bad'>stop</a>
+
+  	2
+
+	  <script>
+
+    	var audioCtx = new AudioContext();
+    	var oscillator = audioCtx.createOscillator();
+    	var gainNode = audioCtx.createGain();
+
+    	oscillator.connect(gainNode);
+			gainNode.connect(audioCtx.destination);
+
+			oscillator.type = 'square'; // sine wave — other values are 'square', 'sawtooth', 'triangle' and 'custom'
+			oscillator.frequency.value = 0.5; // value in hertz
+			oscillator.start();	
+
+
+		</script>
+  </body>
+  <script>window.location='3'</script> 
+</html>
